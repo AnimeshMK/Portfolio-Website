@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #1e2a47; /* Navy Blue background */
+  color: #d1d3d8; /* Light grey text */
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #1a1d3b; /* Darker Navy Blue */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav a {
+  color: #d1d3d8;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #ffd700; /* Golden color on hover */
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #2c3e50; /* Dark Grey for list items */
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+ul li:hover {
+  background: #34495e; /* Lighter Grey on hover */
+}
+
+footer {
+  background-color: #1a1d3b; /* Darker Navy Blue */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* ✅ New styles for collapsible projects with Dark Theme */
+.project {
+  background: #2c3e50; /* Dark Grey for projects */
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  user-select: none;
+  transition: transform 0.3s;
+}
+
+.project-points {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.project-points.show {
+  max-height: 500px; /* large enough for content */
+}
+/* Contact Section Link (LinkedIn) */
+#contact a {
+  color: #7bb8e1; /* Soft light blue */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+  color: #a4d5f7; /* Slightly lighter blue on hover */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Adjust based on your header height */
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animesh Khandelwal | Portfolio</title >
+
+  <!-- Google Fonts --> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Animesh Khandelwal</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#internships">Internships</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#competitions">Competitions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>I'm a Cyber Security enthusiast passionate about building and protecting the digital world. I love exploring security technologies, building web applications, and participating in tech competitions.</p>
+  </section>
+
+<!-- Projects Section -->
+<section id="projects" class="fade-in">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <div class="project-header" onclick="toggleProject(this)">
+      <h3>Snort IDS/IPS Setup</h3>
+      <span class="toggle-icon">▼</span>
+    </div>
+    <ul class="project-points">
+      <li>Installed and configured Snort on Ubuntu.</li>
+      <li>Created custom intrusion detection rules.</li>
+      <li>Tested network attacks and analyzed logs.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="project-header" onclick="toggleProject(this)">
+      <h3>Web Application Firewall Demo</h3>
+      <span class="toggle-icon">▼</span>
+    </div>
+    <ul class="project-points">
+      <li>Simulated web attacks on a test server.</li>
+      <li>Implemented firewall rules to block attacks.</li>
+      <li>Generated reports of blocked intrusions.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="project-header" onclick="toggleProject(this)">
+      <h3>Security Awareness Game</h3>
+      <span class="toggle-icon">▼</span>
+    </div>
+    <ul class="project-points">
+      <li>Designed an educational cybersecurity quiz game.</li>
+      <li>Gamified learning for better engagement.</li>
+      <li>Promoted awareness through interactive sessions.</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- Internships Section -->
+<section id="internships" class="fade-in">
+  <h2>Internships</h2>
+  <ul>
+    <li>DCDIUM - Cybersecurity Intern (June 2024 - August 2024)</li>
+    <li>XYZ Company - Web Development Intern (Jan 2024 - March 2024)</li>
+    <!-- Add more internships if you want -->
+  </ul>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="fade-in">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Certified Ethical Hacker (CEH)</li>
+    <li>Google Cybersecurity Certificate</li>
+    <li>Introduction to Cybersecurity - Cisco Networking Academy</li>
+    <!-- Add more certifications here -->
+  </ul>
+</section>
+
+<!-- Competitions Section -->
+<section id="competitions" class="fade-in">
+  <h2>Competitions</h2>
+  <ul>
+    <li>Winner - Hackathon 2025 at Symbiosis Skills and Professional University</li>
+    <li>2nd Place - CyberShield Capture the Flag (CTF) Competition</li>
+    <li>Participant - TechFest Coding Competition</li>
+    <!-- Add more competitions -->
+  </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="fade-in">
+  <h2>Contact Me</h2>
+  <p>Phone No: +91 84464 02138</p>
+  <p>Email: animeshmk2205@gmail.com</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/animesh-khandelwal-707a84283" target="_blank">Animesh Khandelwal</a></p>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <p>&copy; 2025 Animesh Khandelwal. All rights reserved.</p>
+</footer>
+
+<!-- Link to JavaScript -->
+<script src="script.js"></script>
+<script>
+  // Smooth scrolling for older browsers and better control
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
